@@ -2,7 +2,7 @@
 require_once __DIR__ . '/db.php';
 
 /**
- * Start a hardened PHP session with sensible cookie flags.
+ * Start a  PHP session with sensible cookie flags.
  */
 function start_secure_session() {
     $isHttps = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') || (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443);
@@ -24,7 +24,7 @@ function start_secure_session() {
 }
 
 /**
- * Require a valid login. Also implements 60s inactivity timeout.
+ * Require a valid login. Also implements 60 seconds inactivity timeout.
  * Refreshes the "last_activity" timestamp on each valid request.
  */
 function require_login() {
