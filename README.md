@@ -1,6 +1,6 @@
 # PHP Login System (Starter)
 
-A minimal, secure-ish PHP/MySQL login with session-based auth, 60s inactivity timeout, and clean redirects.
+A minimal, secure PHP/MySQL login with session based auth, 60 seconds of inactivity timeout, and clean redirects.
 
 ## Features
 - PHP sessions with secure cookie flags and strict mode
