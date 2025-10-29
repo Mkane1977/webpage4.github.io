@@ -9,7 +9,7 @@ function start_secure_session() {
     ini_set('session.use_strict_mode', 1);
     ini_set('session.use_only_cookies', 1);
     ini_set('session.cookie_httponly', 1);
-    // samesite requires PHP 7.3+; most free hosts support it now
+    //  requires PHP 7.3+; 
     session_set_cookie_params([
         'lifetime' => 0,
         'path' => '/',
@@ -48,7 +48,7 @@ function require_login() {
     $_SESSION['last_activity'] = time();
 }
 
-/** Send no-cache headers for protected pages */
+/** Send no cache headers for protected pages */
 function nocache_headers() {
     header('Cache-Control: no-store, no-cache, must-revalidate, max-age=0');
     header('Cache-Control: post-check=0, pre-check=0', false);
